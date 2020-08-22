@@ -1,0 +1,25 @@
+.navbar .navbar-brand {
+    color: #2e2e1f;
+}
+
+.navbar .nav-link {
+    color: #2e2e1f;
+}
+
+
+.bg-light {
+    /* background-color: #f5f5f5!important; */
+    background-color: white!important;
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar .active {
+    font-weight: bold;
+}
