@@ -14,12 +14,13 @@ function App() {
     <Container>
       <Router>
         <Switch>
-          <Route exact path="/" component={Homepage}/>
-          <Route exact path="/about" component={About}/>
-          <Route exact path="/schedule" component={Schedule}/>
+          <Route path="/about" component={About}/>
+          <Route path="/schedule" component={Schedule}/>
           {/* <Route exact path="" component={}/> */}
-          <Route exact path="/statistics" component={Statistics}/>
-          <Route exact path="/join" component={Join}/>
+          <Route path="/statistics" component={Statistics}/>
+          <Route path="/join" component={Join}/>
+          <Route path="/" component={Homepage}/>
+
         </Switch>
       </Router>
     </Container>
