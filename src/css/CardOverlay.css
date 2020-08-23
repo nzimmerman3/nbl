@@ -1,3 +1,11 @@
 .btn {
     color: white;
 }
+
+.card .card-img {
+    width: 100vw;
+    position: relative;
+    left: 50%;  
+    margin-left: -50vw;
+    max-height: 70vw;
+}

@@ -11,7 +11,7 @@ const MyHeader = (props) => {
     return (
         <div>
             <Navbar className="container" expand="sm" variant="light" bg="light" sticky="top">
-                <Navbar.Brand href="/"> NBL{' '}
+                <Navbar.Brand href={process.env.PUBLIC_URL + "/"}> NBL{' '}
                 <img
                     alt=""
                     src={logo}
@@ -23,13 +23,13 @@ const MyHeader = (props) => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav.Link href="/about" className={props.active==="about" ? "active" : ""}>About</Nav.Link>
-                    <Nav.Link href="/schedule" className={props.active==="schedule" ? "active" : ""}>Schedule</Nav.Link>
+                    <Nav.Link href={process.env.PUBLIC_URL  + "/about"} className={props.active==="about" ? "active" : ""}>About</Nav.Link>
+                    <Nav.Link href={process.env.PUBLIC_URL + "/schedule"} className={props.active==="schedule" ? "active" : ""}>Schedule</Nav.Link>
                     <NavDropdown title="Rosters" className={props.active==="rosters" ? "active" : ""}>
-                        <NavDropdown.Item className="" href="/team1">Team 1</NavDropdown.Item>
+                        <NavDropdown.Item className="" href={process.env.PUBLIC_URL + "/team1"}>Team 1</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link className={props.active==="statistics" ? "mr-auto active" : "mr-auto"} href="/statistics">Statistics</Nav.Link>
-                    <Nav.Link href="/join" className={props.active==="join" ? "active" : ""}>Join</Nav.Link>
+                    <Nav.Link className={props.active==="statistics" ? "mr-auto active" : "mr-auto"} href={process.env.PUBLIC_URL + "/statistics"}>Statistics</Nav.Link>
+                    <Nav.Link href={process.env.PUBLIC_URL + "/join"} className={props.active==="join" ? "active" : ""}>Join</Nav.Link>
                 </Navbar.Collapse>
             </Navbar>
         </div>

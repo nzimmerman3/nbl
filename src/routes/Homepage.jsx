@@ -7,6 +7,9 @@ import MainContent from '../components/MainContent'
 import '../css/Homepage.css'
 
 const Homepage = () => {
+    const url = process.env.PUBLIC_URL
+    // const url = "https://nzimmerman3.github.io/nbl"
+    console.log(url)
     return (
         <div>
             <Container>

@@ -10,16 +10,18 @@ import Join from "./routes/Join"
 import "./css/App.css"
 
 function App() {
+  const url = process.env.PUBLIC_URL
+  // const url = "https://nzimmerman3.github.io/nbl"
+  console.log(url)
   return (
     <Container>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route path="/about" component={About}/>
-          <Route path="/schedule" component={Schedule}/>
-          {/* <Route exact path="" component={}/> */}
-          <Route path="/statistics" component={Statistics}/>
-          <Route path="/join" component={Join}/>
-          <Route path="/" component={Homepage}/>
+          <Route exact path={"/about"} component={About}/>
+          <Route exact path={"/schedule"} component={Schedule}/>
+          <Route exact path={"/statistics"} component={Statistics}/>
+          <Route exact path={"/join"} component={Join}/>
+          <Route exact path={"/"} component={Homepage}/>
 
         </Switch>
       </Router>
